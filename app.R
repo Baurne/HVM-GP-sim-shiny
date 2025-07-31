@@ -67,11 +67,15 @@ ui <- fluidPage(
                  plotOutput("ridge_zoom", height = "300px")
         ),
         tabPanel("Summary Table",
+                 # Some vertical space
+                 tags$br(),
                  shiny::p("Below is the lower quantile, median, and upper quantile of the",
                    "estimate distribution for your selections."),
                  DT::DTOutput("summary_table")
         ),
         tabPanel("Failure Rates",
+                 # Some vertical space
+                 tags$br(),
                  p("Percentage of simulation replicates that failed for each design cell."),
                  DT::DTOutput("fail_table")
         ),
