@@ -8,8 +8,8 @@ library(dplyr)
 library(latex2exp)
 
 # load your simulation results
-#results  <- readRDS("data/results.rds")
-#long_res <- readRDS("data/long_res.rds")
+results  <- readRDS("data/results.rds")
+long_res <- readRDS("data/long_res.rds")
 
 ui <- fluidPage(
   titlePanel("Parameter Recovery Explorer"),
